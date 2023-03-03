@@ -1,7 +1,7 @@
 from unifr_api_epuck import wrapper
 
 MY_IP = '192.168.2.211'
-robot = wrapper.get_robot
+robot = wrapper.get_robot(MY_IP)
 counter = 0
 
 robot.init_sensors()
