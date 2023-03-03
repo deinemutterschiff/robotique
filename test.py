@@ -7,11 +7,11 @@ counter = 0
 robot.init_sensors()
 robot.calibrate_prox()
 
-while robot.go_on() and counter < 400:
+while robot.go_on() and counter < 900:
     counter += 1
-    if counter % 80 < 40:
-        robot.set_speed(2, 2)
+    if counter % 450 < 225:
+        robot.set_speed(2, 10)
     else :
-        robot.set_speed(-2, -2)
+        robot.set_speed(10, 2)
 
 robot.clean_up()
